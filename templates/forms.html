@@ -1,0 +1,14 @@
+{% extends 'base.html'%}
+
+{% block content %}
+<div class="row row-centered">
+    <div class="col-centered">
+    <form action="" method='POST' id="post-form" enctype="multipart/form-data">
+        {% csrf_token %}   
+        {{ form.as_p }}    
+         <input id="image" type='submit' value='Enviar'/>
+    </form>
+    </div>
+</div>
+{% endblock %}
+

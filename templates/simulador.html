@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+    <div class="row row-centered">
+        <div class="col-centered">
+            <div class=col-md-2>
+                <ul style="margin-top:50px;">
+                    <li><a id="btn1" href="#">Pedra 1</a></li>
+                    <li><a id="btn2" href="#">Apagar</a></li>
+                    <li><a id="btn-Convert-Html2Image" href="#">Download</a></li>
+                </ul>
+            </div>
+            <div class="col-md-8">
+               <canvas id="parallax" width="640" height="480"
+                        style="margin-top:50px; 
+                        border:1px solid rgba(0,0,0,0.1);">
+               </canvas>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+
